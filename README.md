@@ -1,4 +1,7 @@
 
+![Capa do estudo de caso de Quality Assurance](assets/banner.png)
+
+
 # 🔎 Auditoria de Assinaturas e Pagamentos Recorrentes
 
 ### Estudo de Caso | Quality Assurance (QA) | Stripe | Análise de Sistemas
