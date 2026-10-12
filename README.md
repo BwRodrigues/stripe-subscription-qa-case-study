@@ -61,3 +61,78 @@ Foram consideradas as seguintes possibilidades:
 
 As hipóteses foram utilizadas para orientar a análise, sem serem tratadas como causas comprovadas.
 
+
+---
+
+## 🧪 Metodologia de investigação
+
+A investigação foi conduzida por meio da análise de informações disponíveis na plataforma de pagamentos, com foco na consistência entre assinaturas, transações e regras de negócio.
+
+### 1. Levantamento de informações
+
+Inicialmente, foram examinados os registros de assinaturas e pagamentos para compreender o comportamento do sistema.
+
+As principais informações consideradas foram:
+
+- Status das assinaturas.
+- Produtos e planos associados.
+- Valores e periodicidade de faturamento.
+- Datas de início e renovação.
+- Histórico de transações.
+- Situação dos pagamentos.
+
+### 2. Análise de transações
+
+As transações foram classificadas de acordo com seus respectivos status:
+
+- Pagamentos bem-sucedidos.
+- Pagamentos cancelados.
+- Pagamentos reembolsados.
+
+Essa classificação permitiu diferenciar tentativas de pagamento de transações efetivamente concluídas.
+
+### 3. Validação das assinaturas
+
+Foram examinadas assinaturas relacionadas a pagamentos concluídos, verificando:
+
+- Plano contratado.
+- Intervalo de recorrência.
+- Próxima data de faturamento.
+- Valor previsto para renovação.
+- Relação entre assinatura, pagamento e fatura.
+
+O objetivo foi verificar se o ciclo de faturamento registrado correspondia à regra de negócio esperada.
+
+### 4. Análise de inconsistências
+
+As informações obtidas foram comparadas com as evidências de autorizações bancárias.
+
+A investigação considerou que a periodicidade de uma assinatura e a frequência de uma autorização de pagamento são informações distintas.
+
+Por esse motivo, a validação do faturamento não foi considerada suficiente para confirmar a configuração das autorizações bancárias.
+
+### 5. Documentação e comunicação
+
+Os resultados foram organizados e comunicados à equipe técnica responsável pela integração.
+
+A documentação distinguiu:
+
+- Comportamentos confirmados.
+- Possíveis inconsistências.
+- Hipóteses ainda não verificadas.
+- Pontos que exigiam investigação adicional.
+
+### 🛠️ Ferramentas e conhecimentos aplicados
+
+- Stripe Dashboard.
+- Análise de assinaturas e faturas.
+- Histórico de transações.
+- Interpretação de registros de API.
+- Validação de regras de negócio.
+- Investigação de problemas.
+- Documentação técnica.
+- Comunicação com desenvolvedores.
+
+> Este estudo apresenta atividades de análise e investigação. Não representa a implementação de uma integração de pagamentos ou a execução de testes automatizados.
+
+
