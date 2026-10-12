@@ -134,5 +134,94 @@ A documentação distinguiu:
 - Comunicação com desenvolvedores.
 
 > Este estudo apresenta atividades de análise e investigação. Não representa a implementação de uma integração de pagamentos ou a execução de testes automatizados.
+>
+> 
+---
+
+## 📊 Resultados da investigação
+
+A análise permitiu verificar a consistência da periodicidade de faturamento em assinaturas selecionadas e identificar pontos que exigiam validação adicional.
+
+### ✅ Comportamentos confirmados
+
+- Assinaturas examinadas apresentavam periodicidade anual.
+- As próximas faturas estavam programadas de acordo com o ciclo anual esperado.
+- Foi possível relacionar pagamentos concluídos às respectivas assinaturas.
+- As transações foram diferenciadas conforme seus status.
+- As evidências foram organizadas e comunicadas à equipe técnica.
+
+### ⚠️ Pontos que exigiam investigação adicional
+
+Foram observadas autorizações bancárias cuja frequência apresentada não correspondia à periodicidade esperada para o produto.
+
+A análise das assinaturas, isoladamente, não permitiu determinar a configuração efetiva dessas autorizações.
+
+Por isso, a verificação da integração e das autorizações bancárias permaneceu como atividade técnica pendente.
+
+### 📋 Resumo das conclusões
+
+| Item analisado | Resultado |
+|---|---|
+| Periodicidade das assinaturas selecionadas | Validada |
+| Próximas faturas no sistema de assinaturas | Compatíveis com o ciclo anual |
+| Classificação das transações | Realizada |
+| Consistência das autorizações bancárias | Não confirmada |
+| Causa da divergência | Não determinada |
+| Comunicação à equipe técnica | Realizada |
+
+> **Conclusão:** a periodicidade correta das assinaturas examinadas não é evidência suficiente para garantir que todas as autorizações de pagamento estejam configuradas corretamente.
+
+---
+
+## 🧪 Matriz de cenários de teste
+
+A matriz abaixo apresenta cenários de QA relacionados ao problema investigado.
+
+Os cenários propostos representam possibilidades de validação e não devem ser interpretados como testes automatizados executados.
+
+| ID | Cenário | Resultado esperado | Situação |
+|---|---|---|---|
+| CT-001 | Verificar periodicidade de assinatura anual | Intervalo de faturamento anual | Validado em casos selecionados |
+| CT-002 | Verificar próxima fatura | Data compatível com a renovação anual | Validado em casos selecionados |
+| CT-003 | Verificar vínculo entre pagamento e assinatura | Associação correta entre os registros | Verificado em casos selecionados |
+| CT-004 | Verificar frequência da autorização bancária | Compatível com a regra de negócio | Pendente |
+| CT-005 | Verificar integração de recorrência | Configurações consistentes entre os serviços | Pendente |
+| CT-006 | Simular renovação anual em ambiente de teste | Cobrança conforme o período contratado | Proposto |
+| CT-007 | Validar comportamento diante de pagamento recusado | Tratamento adequado da falha | Proposto |
+| CT-008 | Validar cancelamento de autorização bancária | Ausência de cobranças futuras não autorizadas | Proposto |
+
+### Classificação dos cenários
+
+- **Validado:** comportamento confirmado por evidências examinadas.
+- **Verificado:** informações relacionadas foram conferidas nos registros disponíveis.
+- **Pendente:** cenário que ainda exige investigação.
+- **Proposto:** teste recomendado para execução futura.
+
+---
+
+## 💡 Aprendizados técnicos
+
+A experiência proporcionou aprendizados importantes sobre qualidade de software e integrações financeiras.
+
+### Validação de regras de negócio
+
+Compreendi a importância de verificar se o comportamento do sistema corresponde às condições contratadas pelo usuário.
+
+### Análise de evidências
+
+Aprendi a relacionar informações de assinaturas, faturas e pagamentos para investigar possíveis inconsistências.
+
+### Visão sistêmica
+
+Percebi que a configuração correta de um componente não garante, isoladamente, o funcionamento correto de toda a integração.
+
+### Comunicação técnica
+
+Pratiquei a organização de evidências, a identificação de pendências e a comunicação de resultados para profissionais responsáveis pelo desenvolvimento.
+
+### Quality Assurance
+
+Reforcei a importância de investigar problemas com base em evidências, separar hipóteses de conclusões e considerar os riscos para o usuário final.
+
 
 
